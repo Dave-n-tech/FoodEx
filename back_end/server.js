@@ -19,9 +19,9 @@ app.use('/api', itemRoutes);
 app.use('/api', cartRoutes);
 app.use('/api', orderRoutes);
 
-app.get('/', (req, res) => {
-  res.send('Hello world!');
-});
+//app.get('/', (req, res) => {
+//  res.send('Hello world!');
+//});
 
 //production environment
 if(process.env.NODE_ENV === 'production') {
@@ -34,7 +34,11 @@ res.sendFile(path.resolve(__dirname,'client','build','index.html'));
 
 //MongoDB connection
 const PORT = process.env.PORT || 4000;
-const dbURI = process.env.DB_URI;
+const dbURI = 'mongodb://127.0.0.1:27017/progress-DB';
+
+/*mongoose.connect('mongodb://127.0.0.1:27017/progress-DB')
+.then(() => console.log('Database connected successfully'))
+.catch(err => console.log(err.message))*/
 
 mongoose
   .connect(dbURI, {
@@ -46,4 +50,4 @@ mongoose
       console.log(`Server running on port: ${PORT}`);
     })
   )
-  .catch(err => console.log(err));
+  .catch(err => console.log(err)); 

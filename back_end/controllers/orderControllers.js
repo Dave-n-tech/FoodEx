@@ -2,10 +2,10 @@ const Order = require('../models/Order');
 const Cart = require('../models/Cart');
 const User = require('../models/User');
 const { createOrder, capturePayment } = require('../helpers/paypal-api');
-const Razorpay = require('razorpay');
+//const Razorpay = require('razorpay');
 
-const { validatePaymentVerification } = require('../utils/razorPay');
-require('dotenv').config();
+//const { validatePaymentVerification } = require('../utils/razorPay');
+//require('dotenv').config();
 
 module.exports.createOrders = async (req, res) => {
   const { userId, cartId } = req.body;
