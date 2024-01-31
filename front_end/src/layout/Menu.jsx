@@ -10,9 +10,9 @@ export default function Menu({ isOpen, setIsOpen }) {
     <div className={"Menu " + (isOpen && "active")}>
       <ul>
         <MenuList content="Home" href="#Hero" handleClick={handleClick} />
-        <MenuList content="Features" href="#Features" handleClick={handleClick} />
-        <MenuList content="Testimonials" href="#Testimonials" handleClick={handleClick} />
-        <MenuList content="Contact" href="#Footer" handleClick={handleClick} />
+        <MenuList content="Products" href="/products" handleClick={handleClick} />
+        <MenuList content="Cart" href="/cart" handleClick={handleClick} />
+        <MenuList content="Login" href="/login" handleClick={handleClick} />
       </ul>
       <SignUpButton />
     </div>

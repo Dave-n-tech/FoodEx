@@ -1,4 +1,4 @@
-import Features from "../layout/Features";
+import Products from "../layout/Products";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import Menu from "../layout/Menu";
@@ -15,7 +15,7 @@ export default function LandingPage() {
         <Menu isOpen={menuOpen} setIsOpen={setMenuOpen} />
         <div className="sections">
             <Hero />
-            <Features />
+            <Products />
         </div>
         <Footer />
     </main>

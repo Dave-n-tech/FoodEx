@@ -1,9 +1,10 @@
 import "./MenuList.scss";
+import { Link } from "react-router-dom";
 
 export default function MenuList({content, href, handleClick}) {
   return (
     <li onClick={handleClick}>
-      <a href={href}>{content}</a>
+      <Link to={href}>{content}</Link>
     </li>
   )
 }
