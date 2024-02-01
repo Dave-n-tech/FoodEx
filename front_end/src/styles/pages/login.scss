@@ -13,6 +13,8 @@
         top: 0;
         right: 0;
         height: 100%;
+        z-index: -5;
+        opacity: 0.7;
     }
     
     .left-img{
@@ -20,6 +22,8 @@
         bottom: 0;
         left: 0;
         height: 70%;
+        z-index: -5;
+        opacity: 0.7;
     }
 
     .login-form{
@@ -32,7 +36,7 @@
         }
 
         input{
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.6);
             color: white;
             border: 1px solid white;
         }
@@ -46,6 +50,7 @@
             color: $mainColor;
             font-size: 13px;
             font-weight: 700;
+            cursor: pointer;
         }
 
         .error-msg{

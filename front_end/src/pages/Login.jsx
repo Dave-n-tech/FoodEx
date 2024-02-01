@@ -71,7 +71,7 @@ export default function LoginPage() {
       });
       
       if(accessToken){
-        navigate("/product")
+        navigate("/home")
       }else{
         setErrMsg("Account doesn't exist, please create an account")
       }

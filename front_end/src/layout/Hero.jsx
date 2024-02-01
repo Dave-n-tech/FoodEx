@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="image-container">
           <img
             src= "https://res.cloudinary.com/dmqhmprkr/image/upload/v1706531475/unsplash_WOxddhzhC1w_irk1xu.png"
-            alt="image of food products"
+            alt="food products"
           />
         </div>
       </div>

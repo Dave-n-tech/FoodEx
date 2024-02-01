@@ -1,7 +1,7 @@
-@import '../styles/base/globals.scss';
-@import '../styles/base/mixins.scss';
+@import "../styles/base/globals.scss";
+@import "../styles/base/mixins.scss";
 
-.Menu{
+.homeMenu{
     @include menu-style;
 
     &.active{
@@ -35,13 +35,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .Menu{
+    .homeMenu{
         width: 500px;
         height: 65px;
-        background-color: $mainColor;
-        padding: 0px 15px;
+        background-color: white;
+        padding: 0px 10px;
         top: 0;
-        right: 0;
+        right: 350px;
         flex-direction: row;
         gap: 10px;
         z-index: 5;
@@ -49,13 +49,14 @@
 
         ul{
             width: 100%;
-            font-size: 16px;
-            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            color: $mainColor;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 70px;
 
             li{
                 margin: 0;

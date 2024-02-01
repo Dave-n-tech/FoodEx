@@ -6,7 +6,7 @@ export default function Header({isOpen, setIsOpen}) {
        <div className="wrapper">
         <div className="left white-border">
           <h1 className="Title">
-            <a href="#Hero">FoodEx</a>
+            <a href="/">FoodEx</a>
           </h1>
         </div>
         <div className="right white-border">

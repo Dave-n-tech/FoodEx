@@ -79,6 +79,8 @@ export default function SignUp() {
         password: "",
       });
       setSuccess(true);
+      navigate('/home');
+
     } catch (err) {
       if (!err?.response) {
         setErrMsg("No Server Response");
@@ -107,7 +109,6 @@ export default function SignUp() {
       {success ? (
         <section className="formContainer">
           <h1>Account has been created</h1>
-          <p onClick={goToLogin}>Sign in</p>
         </section>
       ) : (
         <main className="formContainer">
