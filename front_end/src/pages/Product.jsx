@@ -1,11 +1,7 @@
-import "../styles/pages/Productpage.scss";
+import React from 'react'
 
 export default function Product() {
   return (
-    <>
-    <main className='product-page'>
-      <h1>Products</h1>
-    </main>
-    </>
+    <div>Products</div>
   )
 }
