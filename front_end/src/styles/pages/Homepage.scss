@@ -21,7 +21,7 @@
         .product-list{
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px;
             margin: 20px 0 30px;
             justify-content: space-around;
             align-items: center;
@@ -42,31 +42,49 @@
                 text-align: center;
                 color: black;
             }
+
+            &:hover{
+                background-color: rgb(162, 173, 167);
+        
+                .view{
+                    visibility: visible;
+                }
+        
+                img{
+                    filter: brightness(50%);
+                }
+            }
         }
     }
 
     .our-products{
-        background-color: aquamarine;
+        text-align: center;
+        background-color: white;
         min-height: calc(100vh - 70px);
+        padding: 0px 30px;
+        margin-top: 60px;
+
+
+        .product-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 30px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .view-more{
+            width: 150px;
+            height: 40px;
+            border: 1px solid rgb(251, 182, 45);
+            background-color: white;
+            color: rgb(251, 182, 45);
+
+            &:hover{
+                filter: brightness(70%);
+            }
+        }
     }
     
-
-    // .sections{
-    //     width: 100%;
-    //     min-height: calc(100vh - 70px);
-    //     position: relative;
-    //     top: 70px;
-    //     scroll-snap-type: y mandatory;
-    //     scroll-behavior: smooth;
-    //     scrollbar-width: none;
-    //     &::-webkit-scrollbar{
-    //         display: none;
-    //     }
-
-    //     > *{
-    //         width: 100vw;
-    //         min-height: calc(100vh - 70px);
-    //         scroll-snap-align: start;
-    //     }
-    // }
 }

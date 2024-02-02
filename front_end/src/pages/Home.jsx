@@ -6,6 +6,7 @@ import ProductCard from "../components/ProductCard";
 import "../styles/pages/Homepage.scss";
 import Footer from "../layout/Footer";
 import { Outlet } from "react-router-dom";
+import DisplayCard from "../components/DisplayCard";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,9 +40,15 @@ export default function Home() {
         </section>
         <section className="our-products">
           <h1 className="title">Our Products</h1>
-          <div className=".product-list">
-
+          <div className="product-wrapper">
+            <DisplayCard />
+            <DisplayCard />
+            <DisplayCard />
+            <DisplayCard />
+            <DisplayCard />
+            <DisplayCard />
           </div>
+          <button className="view-more">Show More</button>
         </section>
 
         <Outlet />

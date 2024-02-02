@@ -10,7 +10,7 @@ export default function HomeMenu({ isOpen, setIsOpen }) {
       <ul>
         <MenuList content="Home" href="/home" handleClick={handleClick} />
         <MenuList content="Shop" href="products" handleClick={handleClick} />
-        <MenuList content="About" href="/cart" handleClick={handleClick} />
+        <MenuList content="About" href="/about" handleClick={handleClick} />
         <MenuList content="Login" href="/login" handleClick={handleClick} />
       </ul>
     </div>
