@@ -1,7 +1,11 @@
-import React from 'react'
+import "../styles/pages/Productpage.scss";
 
 export default function Product() {
   return (
-    <div>Products</div>
+    <>
+    <main className='product-page'>
+      <h1>Products</h1>
+    </main>
+    </>
   )
 }

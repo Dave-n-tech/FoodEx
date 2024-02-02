@@ -9,7 +9,7 @@ export default function DisplayCard() {
   return (
     <div className="product-card">
       <div className="image-container">
-        <button className="add-to-cart" onClick={() => navigate("cart")}>Add to cart</button>
+        <button className="add-to-cart" onClick={() => navigate("product/cart")}>Add to cart</button>
         <img src={Image} alt="" />
       </div>
       <h3 className="product-name">Cabbage</h3>

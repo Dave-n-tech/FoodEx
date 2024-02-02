@@ -7,15 +7,20 @@ import "../styles/pages/Homepage.scss";
 import Footer from "../layout/Footer";
 import { Outlet } from "react-router-dom";
 import DisplayCard from "../components/DisplayCard";
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <>
-      <main className="home-page">
+
         <HomeHeader isOpen={menuOpen} setIsOpen={setMenuOpen} />
         <HomeMenu isOpen={menuOpen} setIsOpen={setMenuOpen} />
+      
+      {location.pathname === "/home" && (
+      <main className="home-page">
 
         <section className="display-image sections">
           <img src={HomeImage} alt="" />
@@ -50,9 +55,10 @@ export default function Home() {
           </div>
           <button className="view-more">Show More</button>
         </section>
-
-        <Outlet />
       </main>
+        )}
+        <Outlet />
+      
       <Footer />
     </>
   );
