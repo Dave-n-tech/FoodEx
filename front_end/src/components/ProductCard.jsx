@@ -11,7 +11,7 @@ export default function ProductCard({ src, heading }) {
   return (
     <div className="product-card">
       <div className="image-container">
-        <button className="cart-add" onClick={handleClick}>View</button>
+        <button className="view" onClick={handleClick}>View</button>
         <img src={src} alt="" />
       </div>
       <h3>{heading}</h3>
