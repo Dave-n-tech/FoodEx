@@ -50,6 +50,12 @@
         img{
           width: 25px;
           height: 25px;
+          filter: opacity(50%);
+          
+          &:hover{
+            filter: opacity(100%);
+            cursor: pointer;
+          }
         }
       }
     }

@@ -42,13 +42,24 @@ export default function Home() {
           </section>
           <section className="our-products">
             <h1 className="title">Our Products</h1>
+            <ul className="product-category-list">
+              <li>ALL</li>
+              <li>VEGETABLES</li>
+              <li>GRAINS AND FLOURS</li>
+              <li>OILS</li>
+              <li>SPICES</li>
+              <li>PROCESSED FOODS</li>
+              <li>SEAFOODS</li>
+            </ul>
             <div className="product-wrapper">
-              <DisplayCard />
-              <DisplayCard />
-              <DisplayCard />
-              <DisplayCard />
-              <DisplayCard />
-              <DisplayCard />
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images_1_wzufo3.png" name="Palm Oil" type="OILS" price="$ 25.00"/>
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images_2_fq3clo.png" name="Ofada Rice" type="GRAINS" price="$ 50.00"/>
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images-removebg-preview_5_1_ixftou.png" name="CrayFish" type="SEAFOODS" price="$ 20.00"/>
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images_1_wzufo3.png" name="Palm Oil" type="oils" price="$ 25.00"/>
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images_1_wzufo3.png" name="Palm Oil" type="oils" price="$ 25.00"/>
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images_1_wzufo3.png" name="Palm Oil" type="oils" price="$ 25.00"/>
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images_1_wzufo3.png" name="Palm Oil" type="oils" price="$ 25.00"/>
+              <DisplayCard src="https://res.cloudinary.com/dmqhmprkr/image/upload/v1706955260/images_1_wzufo3.png" name="Palm Oil" type="oils" price="$ 25.00"/>
             </div>
             <button className="view-more">Show More</button>
           </section>

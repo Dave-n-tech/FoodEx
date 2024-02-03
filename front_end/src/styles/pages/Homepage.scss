@@ -64,6 +64,26 @@
         padding: 0px 30px;
         margin-top: 60px;
 
+        .product-category-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            gap: 5px;
+            width: 90%;
+            margin: 0 auto;
+
+            li{
+                font-size: 14px;
+                opacity: 0.8;
+
+                &:hover{
+                    color: green;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
 
         .product-wrapper{
             display: flex;
