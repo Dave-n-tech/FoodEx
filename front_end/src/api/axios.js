@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: 'https://foodex-beta.vercel.app/api'
+  baseURL: 'https://food-ex-nu.vercel.app/api'
 });
